@@ -38,7 +38,7 @@ for k in range(star):
         print("* ", end="")
     print("\n")
 
-# Print Star revers Pyramid
+# Print Star with * Pyramid
 for z in range(1,8):
     print(z*'*')
     print("\n")
@@ -48,7 +48,8 @@ for w in range(7,0,-1):
     print(w*'*')
     print("\n")
 
-# Print Star revers Pyramid
+# Print Star revers Pyramid with reversed method
 for a in reversed(range(7,0,-1)):
     print(a*'*')
     print("\n")
+
