@@ -26,11 +26,6 @@ for j in range(0,11,2):
     print('For Loop is:',j)
     print("\n")
 
-# For Loop star
-for p in range(0,11,2):
-    print('For Loop is:',p)
-    print("\n")
-
 # Print Star Pyramid
 star = int(input("Enter number of star: "))
 for k in range(star):
@@ -49,7 +44,7 @@ for w in range(7,0,-1):
     print("\n")
 
 # Print Star revers Pyramid with reversed method
-for a in reversed(range(7,0,-1)):
+for a in reversed(range(1,8)):
     print(a*'*')
     print("\n")
 
