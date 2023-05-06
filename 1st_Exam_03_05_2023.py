@@ -68,11 +68,14 @@ cost = float(input("Enter the total cost of the items in your shopping cart: "))
 if cost < 50:
     tax = 0
     shipping_charge = 5
-elif cost < 100:
-    tax = cost * 0.1
+# elif cost < 100:
+elif cost >= 50 and cost <= 100:
+    tax = 10
+    # tax = cost * 0.1
     shipping_charge = 10
 else:
-    tax = cost * 0.15
+    # tax = cost * 0.15
+    tax = 15
     shipping_charge = 0
 print('Your tax is $', tax, ' and your shipping charge is $', shipping_charge)
 total = cost + tax + shipping_charge
