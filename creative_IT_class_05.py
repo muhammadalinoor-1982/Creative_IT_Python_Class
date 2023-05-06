@@ -48,3 +48,10 @@ for a in reversed(range(1,8)):
     print(a*'*')
     print("\n")
 
+# Table of any Number
+val = int(input('Enter Value: '))
+for i in range(10):
+        i += 1
+        result = val*i
+        print(val, 'x', i, '=', result)
+

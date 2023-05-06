@@ -136,6 +136,17 @@ for _ in range(5):
     t.left(72)
 turtle.done()
 
+# Drawing Hexagon
+import turtle
+t = turtle.Turtle()
+
+s = int(input('Length of adge is: '))
+
+for _ in range(6):
+    t.forward(s)
+    t.left(60)
+turtle.done()
+
 # Drawing Octagon
 import turtle
 t = turtle.Turtle()
