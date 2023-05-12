@@ -22,3 +22,25 @@ print(Fibonacci(n))
 import math
 number = float(input('Enter Number: '))
 print(math.sqrt(number))
+
+# Bubble Sort
+def bubblesort(elements):
+    swapped = False
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+            if elements[i] > elements[i+1]:
+                swapped = True
+                elements[i], elements[i+1] = elements[i+1], elements[i]
+        if not swapped:
+            return
+elements = [7,25,3,100,65,13,125,4,90,15,13,0]
+
+print('Unsorted Elments: ', elements)
+bubblesort(elements)
+print('Sorted Elements: ', elements)
+
+# Python program to count words in a sentence
+# print(len(input('Please Enter your string: ').split()))
+speech = 'my name is aupu'
+res = len(speech.split())
+print(res)
