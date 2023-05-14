@@ -72,6 +72,69 @@ def sumOfSeries(n):
     return sum
 print(sumOfSeries(n))
 
+# Given a positive integer n and the task is to find the sum of series 1*2*3 + 2*3*4 + 4*5*6 + . . .+ n*(n+1)*(n+2 
+n = int(input('Enter the value of N: '))
+def mulSeries(n):
+    sum = 0
+    i = 1
+    while i <= n:
+        sum += i * (i + 1) *  (i + 2)
+        i += 1
+    return sum
+print(mulSeries(n))
+
+# You have been given a series 1/1! + 2/2! + 3/3! + 4/4! +…….+ n/n!, find out the sum of the series till nth term.
+n = int(input('Enter the value of N: '))
+def sumSeries(n):
+    sum = 0
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+        sum += i / fact
+    return sum
+print(sumSeries(n))
+
+# Python Program for Find sum of Series with n-th term as n^2 – (n-1)^2.
+n = int(input('Enter Value of N: '))
+mod = 999
+def findSum(n):
+    return ((n % mod) * (n % mod)) % mod
+print(findSum(n))
+
+# Python Program to find Sum of the series 1*3 + 3*5 + …..
+n = int(input('Enter value of N: '))
+def SumSeries(n):
+    sum = 0
+    for i in range(n):
+        sum += (2 * i + 1) * (2 * i + 3)  
+    return sum
+print(SumSeries(n)) 
+
+# Recursive program to find the Sum of the series 1 – 1/2 + 1/3 – 1/4 … 1/N.
+def sumOfSeries(i, n, s) :
+ 
+    # Base case
+    if i>n :
+        return s
+ 
+    # Recursive case
+    else :
+ 
+        # If we are currently looking
+        # at the even number
+        if i % 2 == 0 :
+            s-= 1 / i
+ 
+        # If we are currently looking
+        # at the odd number
+        else :
+            s+= 1 / i
+        return sumOfSeries(i + 1, n, s)
+ 
+# Driver code
+if __name__ == "__main__":
+    print(sumOfSeries(1, 3, 0))
+
 # Traverse the whole linked list and count the no. of nodes. 
 # Now traverse the list again till count/2 and return the node at count/2. 
 # Python program for the above approach
