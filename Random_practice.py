@@ -1,72 +1,11 @@
 # Random Practice
-# Traverse the whole linked list and count the no. of nodes. 
-# Now traverse the list again till count/2 and return the node at count/2. 
-# Python program for the above approach
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
- 
- 
-class NodeOperation:
-    # Function to add a new node
-    def pushNode(self, head_ref, data_val):
- 
-        # Allocate node and put in the data
-        new_node = Node(data_val)
- 
-        # Link the old list of the new node
-        new_node.next = head_ref
- 
-        # move the head to point to the new node
-        head_ref = new_node
-        return head_ref
- 
-    # A utility function to print a given linked list
-    def printNode(self, head):
-        while (head != None):
-            print('%d->' % head.data, end="")
-            head = head.next
-        print("NULL")
- 
-    ''' Utility Function to find length of linked list '''
- 
-    def getLen(self, head):
-        temp = head
-        len = 0
- 
-        while (temp != None):
-            len += 1
-            temp = temp.next
- 
-        return len
- 
-    def printMiddle(self, head):
-        if head != None:
-            # find length
-            len = self.getLen(head)
-            temp = head
- 
-            # traverse till we reached half of length
-            midIdx = len // 2
-            while midIdx != 0:
-                temp = temp.next
-                midIdx -= 1
- 
-            # temp will be storing middle element
-            print('The middle element is: ', temp.data)
- 
- 
-# Driver Code
-head = None
-temp = NodeOperation()
-head = temp.pushNode(head, 5)
-head = temp.pushNode(head, 4)
-head = temp.pushNode(head, 3)
-head = temp.pushNode(head, 2)
-head = temp.pushNode(head, 1)
-temp.printNode(head)
-temp.printMiddle(head)
- 
-# This code is contributed by Yash Agarwal
-
+# Given a positive integer n and the task is to find the sum of series 1*2*3 + 2*3*4 + 4*5*6 + . . .+ n*(n+1)*(n+2 
+n = int(input('Enter the value of N: '))
+def mulSeries(n):
+    sum = 0
+    i = 1
+    while i <= n:
+        sum += i * (i + 1) *  (i + 2)
+        i += 1
+    return sum
+print(mulSeries(n))
