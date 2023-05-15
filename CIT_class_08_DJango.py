@@ -1,3 +1,4 @@
+# Creative IT Class #08 Topic: env and django setup Date: 10/05/2023
 # 1. Django Virtual Environment create
 '''
 CMD Command>>> python -m venv env

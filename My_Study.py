@@ -108,7 +108,16 @@ def SumSeries(n):
     for i in range(n):
         sum += (2 * i + 1) * (2 * i + 3)  
     return sum
-print(SumSeries(n)) 
+print(SumSeries(n))
+
+# Program to find the sum of a Series 1 + 1/2^2 + 1/3^3 + …..+ 1/n^n
+n = int(input('Enter the value of N: '))
+def serSum(n):
+    sum = 0
+    for i in range(1, n+1):
+        sum += 1 / pow(i, i)
+    return sum
+print(round(serSum(n),5)) 
 
 # Recursive program to find the Sum of the series 1 – 1/2 + 1/3 – 1/4 … 1/N.
 def sumOfSeries(i, n, s) :
