@@ -1,4 +1,10 @@
 # Creative IT Class #09 Topic: Django Super user password and App creation Date: 15/05/2023
+# Django Virtual Environment create: CMD Command>>> python -m venv env
+# Django Activate Environment: CMD Command>>> env\Scripts\activate
+# Install pip: CMD Command>>> pip install django
+# Django Create Project with "Manage.py": CMD Command>>> django-admin startproject project_name .
+# Django Create Admin and Run Server: CMD Command>>> python manage.py runserver
+# Brows the url: 127.0.0.1:8000
 # To freeze server >>> pip freeze
 # To migrate table in database >> python manage.py makemigrations
 # To run migration >> python manage.py migrate
@@ -41,4 +47,7 @@ urlpatterns = [
     path()
 ]
 '''
+# SQL lite viewer web App url: https://sqliteviewer.app/
+# Go to above mention URL and Brows 'db.sqlite3' file from your project folder
+# Now you can get all the database tables and records
 
