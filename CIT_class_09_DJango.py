@@ -9,4 +9,36 @@
 # Enter your password
 # Confirm your password
 # To Create your App >> python manage.py startapp App_Name
+# To Add App in the settings.py file. Example Below:
+'''
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'App', <<<<<<<<<<<<<<<<<
+]
+'''
+# Copy urls.py from 'main' project folder and past to root of 'App' folder
+# Add App path url in the 'main/urls/' file. Example Below:
+'''
+from django.contrib import admin
+from django.urls import path, include <<<<<<<<<<<<<<<<
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('myApp',include('myApp.urls'))  <<<<<<<<<<<<<<<<<<
+]
+'''
+# Change in the 'App/urls' file. Example Below:
+'''
+from django.urls import path
+
+urlpatterns = [
+    path()
+]
+'''
 
