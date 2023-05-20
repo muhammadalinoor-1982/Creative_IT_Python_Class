@@ -1,0 +1,1 @@
+# Creative IT Class #10 Topic: Django path and HttpResponse: 17/05/2023
