@@ -64,4 +64,11 @@ urlpatterns = [
     </div>
     {% endblock %}
 '''
+# How to use "Reformat Code" in the pycharm. Example Below:
+'''
+Step_1: Select block of code from HTML file.
+Step_2: Go to "Code" from the pycharm menubar.
+Step_3: Select "Reformat Code" from the Code menu.
+'''
+# Copy multiple value in the windows clip-board using "win_key" + "V" 
 # ____________________________________________________________________
