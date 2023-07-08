@@ -92,3 +92,8 @@ def update(Request, id):
             return redirect('main')
     return render(Request, 'update.html', locals())
 '''
+# To Add project used all python libraries:
+'''
+Command: pip freeze > requirments.txt
+Command: pip install -r requirments.txt
+''' 

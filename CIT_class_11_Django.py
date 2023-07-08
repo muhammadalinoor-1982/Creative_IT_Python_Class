@@ -21,7 +21,7 @@ TEMPLATES = [
 ''' 
 # Create a folder in the root directory of the project: Folder Name: "static"
 # Configure "static" in the setting file of the "static" portion. Example below:
-# # Static Directory use for Media files Example: CSS, JavaScript, Images etc
+# Static Directory use for Media files Example: CSS, JavaScript, Images etc
 '''
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

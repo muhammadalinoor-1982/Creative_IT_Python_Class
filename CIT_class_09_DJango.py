@@ -28,7 +28,7 @@ INSTALLED_APPS = [
 ]
 '''
 # Copy urls.py from 'main' project folder and past to root of 'App' folder
-# Add App path url in the 'main/urls/' file. Example Below:
+# Add App path url in the 'project/urls/' file. Example Below:
 '''
 from django.contrib import admin
 from django.urls import path, include <<<<<<<<<<<<<<<<

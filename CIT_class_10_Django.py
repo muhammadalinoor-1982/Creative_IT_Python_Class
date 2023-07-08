@@ -1,5 +1,5 @@
 # Creative IT Class #10 Topic: Django HttpResponse, Function, url, path Date: 17/05/2023
-# Add App path url in the 'main/urls/' file. Example Below:
+# Add App path url in the 'project/urls/' file. Example Below:
 '''
 from django.contrib import admin
 from django.urls import path, include <<<<<<<<<<<<<<<<
@@ -10,7 +10,7 @@ urlpatterns = [
     path('',include('myApp.urls'))  <<<<<<<<<<<<<<<<<<
 ]
 '''
-# In the "views.py" import HttpResponse and write the function with HttpResponse aand return it
+# In the "views.py" import HttpResponse and write the function with HttpResponse and return it
 '''
 from django.shortcuts import render
 from django.http import HttpResponse <<<<<<<<<<<<
