@@ -42,6 +42,17 @@ for z in range(1,8):
     print(z*'*')
     print("\n")
 
+# Print Left Side Star Pyramid
+s = int(input('Enter Number: '))
+k = 2*s - 2
+for i in range(0, s):
+    for j in range(0, k):
+        print(end=' ')
+    k = k - 2
+    for j in range(0, i+1):
+        print('* ', end='')
+    print('\r')
+
 # Print Star revers Pyramid
 for w in range(7,0,-1):
     print(w*'*')
